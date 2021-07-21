@@ -1,5 +1,7 @@
 ---
 - hosts: webservers
   roles:
-    - prepare_server
-    - strapi_server
+    - role: datadog.datadog
+      become: yes
+    - role: prepare_server
+    - role: strapi_server

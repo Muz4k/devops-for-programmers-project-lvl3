@@ -3,7 +3,7 @@
   community.docker.docker_container:
     name: strapi-project
     image: strapi/strapi:3.6.5
-    published_ports: 1337:1337
+    published_ports: "{{ strapi_port }}:1337"
     restart_policy: always
     restart: yes
     container_default_behavior: no_defaults
