@@ -1,0 +1,5 @@
+---
+- hosts: webservers
+  roles:
+    - prepare_server
+    - strapi_server

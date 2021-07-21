@@ -1,0 +1,5 @@
+pg_db: defaultdb
+pg_host: postgres-cluster-do-user-9283054-0.b.db.ondigitalocean.com
+pg_port: "25060"
+pg_username: doadmin
+pg_pass: defaultpass
