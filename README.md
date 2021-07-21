@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Muz4k/devops-for-programmers-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/Muz4k/devops-for-programmers-project-lvl3/actions)
 
-## Этот проект про strapi-app
+Этот проект про [strapi-app](https://project.gitpushforce.club/) <- он вот здесь
 
 ## Инфраструктура
 - Сервер-балансировщик - 1 шт.
@@ -51,7 +51,7 @@ make show-encrypted-string secret_name=test_name path_to_file=ansible/group_vars
 make test-app
 ```
 
-### Мониторинг
+## Мониторинг
 - http_check [Datadog](https://www.datadoghq.com/)
   - Alert на почту при отсутствии ответа от сервера с приложением
 - [freshping](https://www.freshworks.com/website-monitoring/signup/)
