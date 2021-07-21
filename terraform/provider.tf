@@ -51,7 +51,7 @@ resource "digitalocean_loadbalancer" "project" {
   }
 
   healthcheck {
-    port     = 5000
+    port     = 1337
     path     = "/"
     protocol = "http"
   }
