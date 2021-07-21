@@ -1,19 +1,19 @@
 ---
 - name: Run container
-    community.docker.docker_container:
-      name: strapi-project
-      image: strapi/strapi:3.6.5
-      published_ports: 1337:1337
-      restart_policy: always
-      restart: yes
-      container_default_behavior: no_defaults
-      pull: yes
-      env:
-        DATABASE_CLIENT: postgres
-        DATABASE_NAME: "{{ pg_db }}"
-        DATABASE_HOST: "{{ pg_host }}"
-        DATABASE_PORT: "{{ pg_port }}"
-        DATABASE_USERNAME: "{{ pg_user }}"
-        DATABASE_PASSWORD: "{{ pg_pass }}"
-        DATABASE_SSL: "true"
-        NODE_TLS_REJECT_UNAUTHORIZED: "0" # without this option - error: self signed certificate in certificate chain
+  community.docker.docker_container:
+    name: strapi-project
+    image: strapi/strapi:3.6.5
+    published_ports: 1337:1337
+    restart_policy: always
+    restart: yes
+    container_default_behavior: no_defaults
+    pull: yes
+    env:
+      DATABASE_CLIENT: postgres
+      DATABASE_NAME: "{{ pg_db }}"
+      DATABASE_HOST: "{{ pg_host }}"
+      DATABASE_PORT: "{{ pg_port }}"
+      DATABASE_USERNAME: "{{ pg_username }}"
+      DATABASE_PASSWORD: "{{ pg_pass }}"
+      DATABASE_SSL: "true"
+      NODE_TLS_REJECT_UNAUTHORIZED: "0" # without this option - error: self signed certificate in certificate chain
