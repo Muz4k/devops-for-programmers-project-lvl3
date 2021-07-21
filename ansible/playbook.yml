@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: all
   roles:
     - role: datadog.datadog
       become: yes
