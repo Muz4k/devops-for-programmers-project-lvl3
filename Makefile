@@ -2,7 +2,7 @@ test:
 	echo 'Hello world!'
 
 test-app:
-	@curl -s --max-time 1 http://project.gitpushforce.club:80| grep -P -o 'Welcome to your Strapi app'
+	@curl -s --max-time 1 http://project.gitpushforce.club:80| grep -o 'Welcome to your Strapi app'
 
 ## TERRAFORM ##
 tf-init:
@@ -20,7 +20,11 @@ start-playbook:
 	ansible-playbook -i ansible/inventory.ini ansible/playbook.yml --vault-password-file ~/.ansible_pass.txt
 
 encrypt-string:
-	ansible-vault encrypt_string --vault-password-file ~/.ansible_pass.txt $(secret_value) --name $(secret_name)
+	ansible-vault encrypt_string --vault-password-file ~/.ansible_pass.txt --stdin-name $(secret_name)
 
 show-encrypted-string:
 	ansible localhost -m debug -a var=$(secret_name) -e@$(path_to_file) --vault-password-file ~/.ansible_pass.txt
+
+create-pass-file:
+	touch ~/.ansible_pass.txt
+	chmod 0600 ~/.ansible_pass.txt

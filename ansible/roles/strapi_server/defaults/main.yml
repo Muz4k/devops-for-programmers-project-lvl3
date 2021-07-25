@@ -4,4 +4,5 @@ pg_port: "25060"
 pg_username: doadmin
 pg_pass: defaultpass
 
+strapi_image: strapi/strapi:3.6.5
 strapi_port: "1337"

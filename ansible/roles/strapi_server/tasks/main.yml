@@ -2,7 +2,7 @@
 - name: Run container
   community.docker.docker_container:
     name: strapi-project
-    image: strapi/strapi:3.6.5
+    image: "{{ strapi_image }}"
     published_ports: "{{ strapi_port }}:1337"
     restart_policy: always
     restart: yes
