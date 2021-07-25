@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6400087-dce2-4840-85d8-ed49af115938" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/strapi_server/defaults/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/strapi_server/defaults/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/strapi_server/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/strapi_server/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/provider.tf" afterDir="false" />
-    </list>
+    <list default="true" id="e6400087-dce2-4840-85d8-ed49af115938" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626865671899</updated>
       <workItem from="1626865673387" duration="26215000" />
-      <workItem from="1627238426826" duration="5219000" />
+      <workItem from="1627238426826" duration="5580000" />
     </task>
     <servers />
   </component>
